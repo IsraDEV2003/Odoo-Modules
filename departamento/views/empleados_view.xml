@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+    
+    <record id="empelados_view_form" model="ir.ui.view">
+        <field name="name">empleado.form.view</field>
+        <field name="model">empleado</field>
+        <field name="arch" type="xml">
+            <form string="Empleado">
+                <sheet>
+                    <group>
+                        <field name="name" placeholder="Nombre"></field>
+                        <field name="job_title" placeholder="Cargo"></field>
+                        <field name="salary" placeholder="Salario"></field>
+                        <field name="start_date"></field>
+                        <field name="department_id" placeholder="Departamento al que Pertenece" options="{'no_quick_create':true}"></field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="empleaados_view_tree" model="ir.ui.view">
+        <field name="name">empleado.tree.view</field>
+        <field name="model">empleado</field>
+
+        
+        <field name="arch" type="xml">
+            <tree string="Empleados">
+                <field name="name"></field>
+                <field name="job_title"></field>
+                <field name="salary"></field>
+                
+                <field name="start_date"></field>
+            </tree>
+        </field>
+    </record>
+
+
+</odoo>

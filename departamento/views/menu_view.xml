@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<odoo>
+    
+
+    <record id="departamentos_action" model="ir.actions.act_window">
+        <field name="name">Departamento</field>
+        <field name="res_model">departamento</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="empleados_action" model="ir.actions.act_window">
+        <field name="name">Empleados</field>
+        <field name="res_model">empleado</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem name="Empresa" id="departamento_menu"/>
+    <menuitem name="Departamento" id="departamentos_menu" parent="departamento_menu" action="departamentos_action" />
+    <menuitem name="Empleados" id="empleados_menu" parent="departamento_menu" action="empleados_action"/>
+</odoo>

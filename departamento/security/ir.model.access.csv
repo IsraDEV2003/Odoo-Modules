@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_empleado_user,Acceso a empleados,model_empleado,departamento_group_user,1,1,1,1
+access_departamento_user,Acceso a departamento,model_departamento,departamento_group_user,1,1,1,1

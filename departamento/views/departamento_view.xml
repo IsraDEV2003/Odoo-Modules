@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<odoo>
+    
+    <record id="departamento_view_tree" model="ir.ui.view"> 
+        <field name="name">departamento.tree.view</field>
+        <field name="model">departamento</field>
+        <field name="arch" type="xml">
+            <tree string="Departamentos">
+                <field name="description"></field>
+                <field name="total_salary"></field>
+                <field name="total_employee_actual"></field>
+                <field name="capacity"></field>
+                <field name="available_capacity"></field>
+                <field name="employee_ids">
+
+                    <tree editable="bottom">
+                        <field name="name"/>
+                        <field name="salary"/>
+                    </tree>
+                    
+                </field>
+                
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="departamento_view_form" model="ir.ui.view">
+        <field name="name">departamento.form.view</field>
+        <field name="model">departamento</field>
+        <field name="arch" type="xml">
+            <form string="Departamento">
+
+                <sheet>
+                    <group>
+                        <field name="name" ></field>
+                        <field name="description"></field>
+                        <field name="capacity"></field>
+                        <field name="available_capacity"></field>
+                        <field name="total_salary"></field>
+                        <field name="total_employee_actual"></field>
+                        <field name="employee_ids"/>
+                    </group>
+                </sheet>    
+            </form>
+        </field>
+    </record>
+
+  
+</odoo>
